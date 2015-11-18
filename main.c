@@ -26,7 +26,7 @@ double newton( double x0, double epsilon, double (*f)(double), double (*fprim)(d
 
 double f( double v )													// A desired function
 {
-	return 70 * pow(v, 3) - 3 * pow(v, 2) + 4 * v - 16;
+	return 50 * pow(v, 3) - 3 * pow(v, 2) + 4 * v - 16;
 }
 
 double fprim( double v )											// The derivative of the desired funcion
@@ -37,7 +37,7 @@ double fprim( double v )											// The derivative of the desired funcion
 int main()
 {
 	double x0, epsilon;												// x0: the initial estimate.		epsilon: the desired accuracy
-	double (*f1)() = f;													// f1: pointer to the desired function f
+	double (*f3)() = f;													// f1: pointer to the desired function f
 	double (*f2)() = fprim;											// f2: pointer to the derivative function fprim
 
 	printf("Enter the initial estimate value(e.g. 1):\n");
